@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{%endblock%}</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{%static 'mypage/crapwiki.css' %}">
+
+  </head>
+  <body>
+    <script src="//3d885b05.mrdoob.com" defer="defer" async="async"></script>
+    <script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-86951-7']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+		  })();
+		</script>
+
+		<table id="topbar">
+			<tr>
+				<td class="box2d" onClick="location.href = 'https://plus.google.com/?gpsrc=ogpy0&tab=wX';"><span>CrapWiki</span></td>
+				<td class="box2d selected" onClick="location.href = 'http://www.google.com/webhp?hl=en&tab=ww';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'http://www.google.com/imghp?hl=en&tab=wi';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'http://maps.google.com/maps?hl=en&tab=wl';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'https://play.google.com/?hl=en&tab=w8';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'http://www.youtube.com/?tab=w1';"><span>YouTube</span></td>
+				<td class="box2d" onClick="location.href = 'http://news.google.com/nwshp?hl=en&tab=wn';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'https://mail.google.com/mail/?tab=wm';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'https://drive.google.com/?tab=wo';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'https://www.google.com/calendar?tab=wc';"><span>CrapWiki</span></td>
+				<td class="box2d" onClick="location.href = 'http://www.google.com/intl/en/options/';"><span>CrapWiki</span></td>
+				<td class="box2d empty" style="width:10%"><span>&nbsp;</span></td>
+				<td class="box2d empty" style="width:20%"><span>&nbsp;</span></td>
+				<td class="box2d empty" style="width:20%"><span>&nbsp;</span></td>
+				<td class="box2d empty" style="width:10%"><span>&nbsp;</span></td>
+				<td class="box2d empty" style="width:5%"><span>&nbsp;</span></td>
+				<td class="box2d empty" style="width:5%"><span>&nbsp;</span></td>
+				<td class="box2d empty" style="width:20%"><span>&nbsp;</span></td>
+			</tr>
+		</table>
+
+		<span style="position:absolute;top:50px;right:30px;"><button id="btnG" class="box2d" style="color:#fff;font-size:11px;font-weight:bold;padding: 0 16px;border:1px solid transparent;background-color:#d14836;text-transform: uppercase;">Sign in</button></span>
+    {%block content%}
+    {%endblock%}
+
+    <table id="bottombar">
+			<tr>
+				<td class="box2d" style="width:10%"><span>&nbsp;</span></td>
+				<td class="box2d" style="width:12%"><span>&nbsp;</span></td>
+				<td class="box2d" style="width:8%"><span>&nbsp;</span></td>
+				<td class="box2d" style="width:4%"><span>&nbsp;</span></td>
+				<td class="box2d" style="width:4%"><span>&nbsp;</span></td>
+				<td class="box2d" style="width:5%"><span>&nbsp;</span></td>
+				<td class="box2d" style="width:4%"><span>&nbsp;</span></td>
+				<td class="box2d" style="width:2%"><span>&nbsp;</span></td>
+			</tr>
+		</table>
+    <script src="{%static 'mypage/crapwiki.js'%}"></script>
+
+  </body>
+</html>
