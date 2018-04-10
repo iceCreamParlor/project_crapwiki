@@ -4,4 +4,6 @@ from django.http import HttpResponse
 def index(request):
     return render(request, 'mypage/index.html')
 def search(request):
-    return render(request, 'mypage/index2.html')
+    searchWord = request.POST['search']
+    context = {'searchWord': searchWord}
+    return render(request, 'mypage/searchWord.html', context)

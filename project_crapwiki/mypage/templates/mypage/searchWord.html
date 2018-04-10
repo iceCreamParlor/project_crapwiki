@@ -1,0 +1,17 @@
+{% extends 'mypage/layout.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+	<p style = "width:100px" class =  "box2d" id = "searchWord">{{ searchWord }}</p>
+	<div class="duckCentre ignoreMe">
+		<div class="duckInner ignoreMe">
+	        <div class="duck">
+						<img style = "height:300px; width:300px; " class="box2d" src="{% static 'img/duck1.jpg' %}" /></div>
+
+	   </div>
+	</div>
+
+</body>
+
+{% endblock %}

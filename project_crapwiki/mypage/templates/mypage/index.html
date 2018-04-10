@@ -14,8 +14,8 @@
 			<img id="logo" src="{% static 'img/trash.jpg' %}" width="300" height="300"class="box2d"><br />
 			<form action="/search" method="POST">
 				{% csrf_token %}
-				<input id="search" value="" title="Search" autocomplete="off" type="text" maxlength="2048" ><br/>
-				<span style="margin: 0 4px;"><button id="btnG" >Search</button></span>
+				<input name="search" title="Search" autocomplete="off" type="text" maxlength="2048" ><br/>
+				<span style="margin: 0 4px;"><button id="btnG" type= "submit" value = "" >Search</button></span>
 				<span style="margin: 0 4px;"><button id="btnI" class="box2d">I'm Feeling Lucky</button></span>
 			</form>
 		</div>

@@ -1,3 +1,10 @@
+ p {
+  height: 28px;
+  margin: 0px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
   body {
 
     margin: 0;
