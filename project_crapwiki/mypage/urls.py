@@ -1,8 +1,8 @@
 
-from django.urls import include, path
+from django.conf.urls import include, url
 from django.contrib import admin
 from . import views
 urlpatterns = [
-    path('', views.index),
-    path('search', views.search),
+    url(r'^$', views.index),
+    url(r'^search', views.search),
 ]
